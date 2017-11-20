@@ -8,6 +8,7 @@ RUN apt-get update
 RUN apt-get install -y vim
 RUN useradd -d /home/term -m -s /bin/bash term
 RUN echo 'term:term' | chpasswd
+RUN echo 'root:term' | chpasswd
 
 EXPOSE 3000
 
